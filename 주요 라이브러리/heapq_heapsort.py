@@ -1,13 +1,13 @@
 '''
 [heap]
     : 파이썬의 heap은 최소힙(min heap)
-    : heapq.heappush(h, 50) 에서
+    : [에러 & 해결] heapq.heappush(h, 50) 에서
     AttributeError: partially initialized module 'heapq' has no attribute 'heappush' (most likely due to a circular import)
-    에러 뜨는데 왜 그런지 모르겠음.
+    => 파일명을 heapq.py로 하고 import heapq 라해서 에러난 것. 파일명 변경해주기.
 '''
 
 '''1. heapq 이용방법'''
-import heapq_heapsort
+import heapq
 
 h = []
 # heappush()
