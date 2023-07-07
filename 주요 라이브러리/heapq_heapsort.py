@@ -7,7 +7,7 @@
 '''
 
 '''1. heapq 이용방법'''
-import heapq
+import heapq_heapsort
 
 h = []
 # heappush()
