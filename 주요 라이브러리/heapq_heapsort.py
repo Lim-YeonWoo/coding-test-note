@@ -6,7 +6,9 @@
     => 파일명을 heapq.py로 하고 import heapq 라해서 에러난 것. 파일명 변경해주기.
 '''
 
-'''1. heapq 이용방법'''
+'''
+1. heapq 이용방법
+'''
 import heapq
 
 h = []
