@@ -19,17 +19,17 @@
 from collections import deque
 
 def bfs(graph, start, visited):
-    # 큐 생성 & start 넣고 방문 표시
+    # [1] 큐 생성 & start 넣고 방문 표시
     q = deque([start])
     visited[start] = True
 
-    # while문 돌기
-    while q : # 큐가 빌 때까지
-        # 큐에서 빼기
+    # [2] 큐가 빌 때까지 while문 돌기
+    while q :
+        # [2-1] 큐에서 빼기
         v = q.popleft()
         print(v)
 
-        # 인접한 모든 노드 중 방문 안한거 전부 큐에 넣기
+        # [2-2] 인접한 모든 노드 중 방문 안한거 전부 큐에 넣기
         for i in graph[v]:
             if visited[i] == False:
                 q.append(i)
