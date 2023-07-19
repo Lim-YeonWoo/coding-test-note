@@ -18,6 +18,8 @@
                   최악의 경우 = 이미 데이터가 정렬되어 있는 경우 = O(N^2)
                   cf) 이미 데이터가 거의 정렬되어 있는 경우 = 삽입 정렬 쓰기, O(N) 걸림
 '''
+
+'''정석적인 코드'''
 def quick_sort_original(a, start, end):
     #[1] 종료 조건
     if start>=end: #원소가 1개
@@ -48,6 +50,7 @@ def quick_sort_original(a, start, end):
     quick_sort_original(a, start, right-1) #pivot은 계속해서 start에 머무는 중. 변한 값은 right임. right가 가운데 idx임.
     quick_sort_original(a, right+1, end)
 
+'''파이썬의 장점 살린 코드'''
 def quick_sort_python(a): # 코드가 간단하나, 정석적인 방법에 비해 비교연산횟수가 증가한다.
     # [1] 종료 조건
     if len(a)<=1:
