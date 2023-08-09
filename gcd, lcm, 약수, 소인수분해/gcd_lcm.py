@@ -12,12 +12,7 @@
          = a*b / (a와b의 gcd)
 '''
 
-def gcd(a, b):
-    if a < b:
-        temp = a
-        a = b
-        b = temp
-
+def gcd(a, b): #맨처음에 a>b가 아니더라도 한번 돌고 나면 자동으로 a>b가 된다. 신경안써도됨
     if a % b == 0:
         return b
     else:
